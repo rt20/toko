@@ -282,7 +282,7 @@
 						<br>
 						<input type="hidden" name="idproduk" value="<?=$p['idproduk'];?>">
 						<input type="hidden" name="idkategori" value="<?=$p['idkategori'];?>">
-						<button type="submit" class="btn btn-primary" name="updatebarangmasuk">Submit</button>
+						<button type="submit" class="btn btn-primary" name="updateproduk">Submit</button>
 					</div>
 				</form>
 			</div>

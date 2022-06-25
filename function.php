@@ -18,4 +18,22 @@ if(isset($_POST['hapusbarang'])){
 		header('location:produk.php');
 	}
 };
+// edit data produk
+if(isset($_POST['updateproduk'])){
+	$namaproduk	= $_POST['namaproduk'];
+	$deskripsi = $_POST['deskripsi'];
+	$hargaafter = $_POST['hargaafter'];
+    $hargabefore = $_POST['hargabefore'];
+   
+	$idproduk = $_POST['idproduk'];
+
+	$queryupdate = mysqli_query($conn,"update produk set namaproduk='$namaproduk', deskripsi='$deskripsi', 
+    hargaafter='$hargaafter', hargabefore='$hargabefore' where idproduk='$idproduk'");
+
+	if($queryupdate){
+		header('location:produk.php');
+	} else{
+		header('location:produk.php');
+	}
+}
 ?>
